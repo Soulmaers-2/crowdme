@@ -179,8 +179,8 @@ z-index: -1;
 }
 .our_work{
 display: flex;
-flex-wrap: wrap;
-justify-content: center;
+flex-direction: column;
+align-items: center;
 }
 
 .main_our{
@@ -191,9 +191,9 @@ justify-content: center;
 
 }
 .main_lable{
-	width: 100%;
+	max-width: 1300px;
 	display:  flex;
-	margin:  0 160px;
+	
 	justify-content: space-between;
 	border-bottom: 1px solid rgba(128, 128, 128, 0.3);
 	
@@ -207,6 +207,9 @@ justify-content: center;
 	position: relative;
 	
 
+}
+.lable:nth-child(n+2){
+	margin-left: 5%;
 }
 .lable:hover{
 	display:  flex;
@@ -274,16 +277,19 @@ cursor: pointer;
 
 }
 .main_search{
-	display:  flex;
+	max-width: 1300px;
+		display:  flex;
 	align-items: center;
-	margin-left:  249px;
-	margin-top: 65px;
+	justify-content: space-between;
+		margin-top: 65px;
 }
 .search{
-	margin-right:  104px;
+	display: flex;
+	justify-content: center;
+	width: 30%;
 }
 .brows_search{
-	margin-right:  183px;
+	width: 70%;
 }
 .brows{
 	color: #ADD136;
@@ -658,6 +664,8 @@ background: none;
 	font-family: Montserrat, AdobeInvisFont,MyriadPro-Regular;
 }
 .footer_low{
+	max-width:  1300px;
+	margin:  0 auto;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -668,12 +676,14 @@ background: none;
 
 .icon{
 	width: 100%;
+
 }
 .icon_list{
+	
 	display: flex;
 	justify-content: space-between;
-  padding: 41px 140px;
-  margin: 0;
+  padding: 0 10%;
+  margin: 20px auto;
 	border-bottom: 2px solid gray;
 	list-style-type: none;
 
@@ -745,6 +755,9 @@ margin-top: 3px;
 	flex-direction: column;
 	
 }
+.lable:nth-child(n+2){
+	margin-left: 0;
+	}
 .find_blue{
 	width: 100%;
 	
@@ -1041,5 +1054,8 @@ progress, .line {
 	.copy{
 		margin: 0;
 
+	}
+	.lable:nth-child(n+2){
+	margin-left: 0;
 	}
 }
